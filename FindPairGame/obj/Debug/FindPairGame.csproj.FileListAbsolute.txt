@@ -1,0 +1,9 @@
+c:\users\ilusa\documents\visual studio 2015\Projects\FindPairGame\FindPairGame\bin\Debug\FindPairGame.exe.config
+c:\users\ilusa\documents\visual studio 2015\Projects\FindPairGame\FindPairGame\bin\Debug\FindPairGame.exe
+c:\users\ilusa\documents\visual studio 2015\Projects\FindPairGame\FindPairGame\bin\Debug\FindPairGame.pdb
+c:\users\ilusa\documents\visual studio 2015\Projects\FindPairGame\FindPairGame\obj\Debug\FindPairGame.csprojResolveAssemblyReference.cache
+c:\users\ilusa\documents\visual studio 2015\Projects\FindPairGame\FindPairGame\obj\Debug\FindPairGame.GameForm.resources
+c:\users\ilusa\documents\visual studio 2015\Projects\FindPairGame\FindPairGame\obj\Debug\FindPairGame.Properties.Resources.resources
+c:\users\ilusa\documents\visual studio 2015\Projects\FindPairGame\FindPairGame\obj\Debug\FindPairGame.csproj.GenerateResource.Cache
+c:\users\ilusa\documents\visual studio 2015\Projects\FindPairGame\FindPairGame\obj\Debug\FindPairGame.exe
+c:\users\ilusa\documents\visual studio 2015\Projects\FindPairGame\FindPairGame\obj\Debug\FindPairGame.pdb
