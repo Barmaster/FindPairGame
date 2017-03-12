@@ -39,6 +39,8 @@
             this.hiscoreLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gamePanel = new System.Windows.Forms.Panel();
+            this.tryLabel = new System.Windows.Forms.Label();
+            this.Label = new System.Windows.Forms.Label();
             this.resetHiscore = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.categoryChoise = new System.Windows.Forms.GroupBox();
@@ -46,8 +48,6 @@
             this.Animals = new System.Windows.Forms.RadioButton();
             this.menuPanel = new System.Windows.Forms.Panel();
             this.restartButton = new System.Windows.Forms.Button();
-            this.Label = new System.Windows.Forms.Label();
-            this.tryLabel = new System.Windows.Forms.Label();
             this.sizeChoise.SuspendLayout();
             this.gamePanel.SuspendLayout();
             this.categoryChoise.SuspendLayout();
@@ -174,6 +174,25 @@
             this.gamePanel.TabIndex = 14;
             this.gamePanel.Visible = false;
             // 
+            // tryLabel
+            // 
+            this.tryLabel.AutoSize = true;
+            this.tryLabel.Font = new System.Drawing.Font("Impact", 20F);
+            this.tryLabel.Location = new System.Drawing.Point(56, 221);
+            this.tryLabel.Name = "tryLabel";
+            this.tryLabel.Size = new System.Drawing.Size(29, 34);
+            this.tryLabel.TabIndex = 17;
+            this.tryLabel.Text = "0";
+            // 
+            // Label
+            // 
+            this.Label.AutoSize = true;
+            this.Label.Location = new System.Drawing.Point(3, 238);
+            this.Label.Name = "Label";
+            this.Label.Size = new System.Drawing.Size(42, 13);
+            this.Label.TabIndex = 16;
+            this.Label.Text = "Trying :";
+            // 
             // resetHiscore
             // 
             this.resetHiscore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(234)))));
@@ -260,25 +279,6 @@
             this.restartButton.UseVisualStyleBackColor = false;
             this.restartButton.Visible = false;
             this.restartButton.Click += new System.EventHandler(this.restartButton_Click);
-            // 
-            // Label
-            // 
-            this.Label.AutoSize = true;
-            this.Label.Location = new System.Drawing.Point(3, 238);
-            this.Label.Name = "Label";
-            this.Label.Size = new System.Drawing.Size(42, 13);
-            this.Label.TabIndex = 16;
-            this.Label.Text = "Trying :";
-            // 
-            // tryLabel
-            // 
-            this.tryLabel.AutoSize = true;
-            this.tryLabel.Font = new System.Drawing.Font("Impact", 20F);
-            this.tryLabel.Location = new System.Drawing.Point(56, 221);
-            this.tryLabel.Name = "tryLabel";
-            this.tryLabel.Size = new System.Drawing.Size(29, 34);
-            this.tryLabel.TabIndex = 17;
-            this.tryLabel.Text = "0";
             // 
             // GameForm
             // 

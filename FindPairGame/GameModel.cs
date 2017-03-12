@@ -100,7 +100,7 @@ namespace FindPairGame
             Random random = new Random();
             List <String> btImages = new List<string>();
             List<int> positions = new List<int>();
-            DirectoryInfo ourDir = new DirectoryInfo(@"..\..\" + category);
+            DirectoryInfo ourDir = new DirectoryInfo(@"..\..\Data\" + category);
             foreach (FileInfo file_name in ourDir.GetFiles())
             {
                 if ((file_name.Extension.ToLower() == ".png") ||
@@ -119,10 +119,10 @@ namespace FindPairGame
             {
                 string rImage = btImages[random.Next(0, btImages.Count)];
                 int firstPosition = positions[random.Next(0, positions.Count)];
-                imageAdressMatrix[firstPosition / currentMatrixSize.Width, firstPosition % currentMatrixSize.Width] = @"../../"+rImage;
+                imageAdressMatrix[firstPosition / currentMatrixSize.Width, firstPosition % currentMatrixSize.Width] = @"../../Data/"+rImage;
                 positions.Remove(firstPosition);
                 int secondPosition = positions[random.Next(0, positions.Count)];
-                imageAdressMatrix[secondPosition/currentMatrixSize.Width,secondPosition% currentMatrixSize.Width] = @"../../" + rImage;
+                imageAdressMatrix[secondPosition/currentMatrixSize.Width,secondPosition% currentMatrixSize.Width] = @"../../Data/" + rImage;
                 positions.Remove(secondPosition);
             }
 

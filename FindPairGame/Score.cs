@@ -15,12 +15,12 @@ namespace FindPairGame
         {
             _tryLeft = tryleft;
             _score = 0;
-            _hiscore = Int32.Parse(System.IO.File.ReadAllText(@"..\..\record.txt"));
+            _hiscore = Int32.Parse(System.IO.File.ReadAllText(@"..\..\Data\record.txt"));
         }
         public int hiscore
         {
             get { return _hiscore; }
-            set { _hiscore=value; System.IO.File.WriteAllText(@"..\..\record.txt", _hiscore.ToString()); }
+            set { _hiscore=value; System.IO.File.WriteAllText(@"..\..\Data\record.txt", _hiscore.ToString()); }
         }
         public int tryLeft
         {
@@ -41,7 +41,7 @@ namespace FindPairGame
                 if (_score > _hiscore)
                 {
                     _hiscore = score;
-                    System.IO.File.WriteAllText(@"..\..\record.txt", _hiscore.ToString());
+                    System.IO.File.WriteAllText(@"..\..\Data\record.txt", _hiscore.ToString());
                 }
             }
         }
