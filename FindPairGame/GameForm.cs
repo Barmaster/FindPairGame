@@ -32,23 +32,25 @@ namespace FindPairGame
                 bindToModel(controller.Model); //Подписываемся на изменения в модели
             }
         }
+
         private void bindToModel(GameModel model)
         {
             model.PropertyChanged += Model_PropertyChanged;
         }
+
         private void Model_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             if (e.PropertyName == "state")
             {
                 stateModelChanged(Controller.Model.StateOfModel);
             }
-            if (e.PropertyName == "hiscore")
+            else if (e.PropertyName == "hiscore")
             {
                 ScoreRefresh();
             }
         }
         
-        //Перерисовка числовой информации
+        //Перерисовка числовой информации характеризующей игровой процесс
         private void ScoreRefresh()
         {
             tryLabel.Text = Controller.Model.Score.tryLeft.ToString();
@@ -92,6 +94,7 @@ namespace FindPairGame
                                 tableForCards.Dispose();
                                 restartButton.Text = "♕\nRestart";
                                 restartButton.Visible = true;
+                                congaratLabel.Visible = true;
                                 break;
                             }
                         case GameModel.EnumState.FinalLose:
@@ -104,13 +107,8 @@ namespace FindPairGame
                       }
                 }
             ScoreRefresh();
-
-            }
-        public new void Show()
-        {
-            Application.Run(this);
-        }
-
+         }
+        
         private void startButton_Click(object sender, EventArgs e)
         {
             menuPanel.Visible = false;
@@ -141,6 +139,7 @@ namespace FindPairGame
         private TableLayoutPanel CreateTableForCards(Size rowsAndColumns)
         {
             restartButton.Visible = false;
+            congaratLabel.Visible = false;
             int rows = rowsAndColumns.Height;
             int columns = rowsAndColumns.Width;
             TableLayoutPanel tableForCard = new TableLayoutPanel();
@@ -192,6 +191,8 @@ namespace FindPairGame
             if (getCurentTableForCards() != null) getCurentTableForCards().Dispose();
             menuPanel.Visible = true;
             gamePanel.Visible = false;
+            congaratLabel.Visible = false;
+            restartButton.Visible = false;
         }
         // Сброс рекорда
         private void resetHiscore_Click(object sender, EventArgs e)
@@ -203,6 +204,10 @@ namespace FindPairGame
         {
             if (getCurentTableForCards()!=null) getCurentTableForCards().Dispose();
             Controller.restart();
+        }
+        public new void Show()
+        {
+            Application.Run(this);
         }
     }
 }

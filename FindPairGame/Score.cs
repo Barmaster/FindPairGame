@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace FindPairGame
 {
+    //Числовая информация характеризующая игровой процесс
     public class Score
     {
         private int _score;

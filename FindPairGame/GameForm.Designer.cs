@@ -48,6 +48,7 @@
             this.Animals = new System.Windows.Forms.RadioButton();
             this.menuPanel = new System.Windows.Forms.Panel();
             this.restartButton = new System.Windows.Forms.Button();
+            this.congaratLabel = new System.Windows.Forms.Label();
             this.sizeChoise.SuspendLayout();
             this.gamePanel.SuspendLayout();
             this.categoryChoise.SuspendLayout();
@@ -255,11 +256,11 @@
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.Transparent;
-            this.menuPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.menuPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.menuPanel.Controls.Add(this.categoryChoise);
             this.menuPanel.Controls.Add(this.sizeChoise);
             this.menuPanel.Controls.Add(this.startButton);
-            this.menuPanel.Location = new System.Drawing.Point(169, 139);
+            this.menuPanel.Location = new System.Drawing.Point(175, 140);
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(429, 414);
             this.menuPanel.TabIndex = 16;
@@ -280,14 +281,28 @@
             this.restartButton.Visible = false;
             this.restartButton.Click += new System.EventHandler(this.restartButton_Click);
             // 
+            // congaratLabel
+            // 
+            this.congaratLabel.AutoSize = true;
+            this.congaratLabel.BackColor = System.Drawing.Color.Transparent;
+            this.congaratLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.congaratLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.congaratLabel.Location = new System.Drawing.Point(216, 107);
+            this.congaratLabel.Name = "congaratLabel";
+            this.congaratLabel.Size = new System.Drawing.Size(204, 42);
+            this.congaratLabel.TabIndex = 18;
+            this.congaratLabel.Text = "Well done!";
+            this.congaratLabel.Visible = false;
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(784, 642);
-            this.Controls.Add(this.gamePanel);
             this.Controls.Add(this.menuPanel);
+            this.Controls.Add(this.congaratLabel);
+            this.Controls.Add(this.gamePanel);
             this.Controls.Add(this.restartButton);
             this.MaximizeBox = false;
             this.Name = "GameForm";
@@ -300,6 +315,7 @@
             this.categoryChoise.PerformLayout();
             this.menuPanel.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -324,6 +340,7 @@
         private System.Windows.Forms.Button restartButton;
         private System.Windows.Forms.Label tryLabel;
         private System.Windows.Forms.Label Label;
+        private System.Windows.Forms.Label congaratLabel;
     }
 }
 
