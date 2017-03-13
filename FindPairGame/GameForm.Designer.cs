@@ -76,13 +76,13 @@
             this.largeSize.Name = "largeSize";
             this.largeSize.Size = new System.Drawing.Size(80, 29);
             this.largeSize.TabIndex = 2;
-            this.largeSize.TabStop = true;
             this.largeSize.Text = "Large";
             this.largeSize.UseVisualStyleBackColor = true;
             // 
             // mediumSize
             // 
             this.mediumSize.AutoSize = true;
+            this.mediumSize.Checked = true;
             this.mediumSize.Location = new System.Drawing.Point(29, 78);
             this.mediumSize.Name = "mediumSize";
             this.mediumSize.Size = new System.Drawing.Size(100, 29);
@@ -97,7 +97,6 @@
             this.smallSize.Name = "smallSize";
             this.smallSize.Size = new System.Drawing.Size(80, 28);
             this.smallSize.TabIndex = 0;
-            this.smallSize.TabStop = true;
             this.smallSize.Text = "Small";
             this.smallSize.UseVisualStyleBackColor = true;
             // 
