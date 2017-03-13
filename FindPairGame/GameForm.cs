@@ -17,7 +17,7 @@ namespace FindPairGame
         public GameForm()
         {
             InitializeComponent();
-            this.BackgroundImage = new Bitmap(@"../../Data/back.jpg");
+            SetBackground();
         }
 
         public GameController Controller
@@ -209,6 +209,11 @@ namespace FindPairGame
         public new void Show()
         {
             Application.Run(this);
+        }
+        private void SetBackground()
+        {
+            
+            this.BackgroundImage = new Bitmap(@"../../Data/back.jpg");
         }
     }
 }
