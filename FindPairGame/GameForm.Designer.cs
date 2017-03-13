@@ -104,7 +104,6 @@
             // startButton
             // 
             this.startButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(214)))), ((int)(((byte)(209)))));
-            this.startButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.startButton.Location = new System.Drawing.Point(40, 303);
             this.startButton.Name = "startButton";
@@ -190,9 +189,9 @@
             this.Label.AutoSize = true;
             this.Label.Location = new System.Drawing.Point(3, 238);
             this.Label.Name = "Label";
-            this.Label.Size = new System.Drawing.Size(42, 13);
+            this.Label.Size = new System.Drawing.Size(56, 13);
             this.Label.TabIndex = 16;
-            this.Label.Text = "Trying :";
+            this.Label.Text = "Trying left:";
             // 
             // resetHiscore
             // 
