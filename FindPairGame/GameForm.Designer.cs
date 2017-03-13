@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameForm));
             this.sizeChoise = new System.Windows.Forms.GroupBox();
             this.largeSize = new System.Windows.Forms.RadioButton();
             this.mediumSize = new System.Windows.Forms.RadioButton();
@@ -296,7 +295,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(784, 642);
             this.Controls.Add(this.menuPanel);
             this.Controls.Add(this.congaratLabel);
